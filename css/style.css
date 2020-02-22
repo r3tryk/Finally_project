@@ -1,3 +1,4 @@
+
 header {
     background-color: #3b3d42;
 }
@@ -18,22 +19,13 @@ header {
 }
 
 .picture-header {
-    position: relative;
     width: 100%;
-    margin-right: 0px;
     height: auto;
-}
-
-.description-picture {
-    color: #289448;
-    position: absolute;
-    top: 200px;
-    left: 50px;
-    width: 100%;
 }
 
 .description {
     text-align: center;
+    padding: 25px;
     margin: 30px;
     border-left: 6px solid rgb(13, 107, 10);
     background-color: rgb(199,216,225);
@@ -58,5 +50,9 @@ header {
     position: absolute;
     color: #289448;
     padding: 20px;
-
 }
+
+.Useful-link {
+    color: #289448;
+}
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,14 +20,26 @@
             <div class="row">
             <div class="col-sm-4">
                 <div class="nav-logo">
-                    <img src="images/logo.svg" alt="Логотип нашей компании">
+                    <img src="../images/logo.svg" alt="Логотип нашей компании">
                 </div>   
             </div>
             <div class="col-sm-8">
                 <ul class="nav">
-                    <li class="nav-item active"><a class="nav-link" href="#">ГЛАВНАЯ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ГЛАВНАЯ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">О КОМПАНИИ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">ПРОДУКЦИЯ</a></li>
+
+                      <!--          Drop-menu            -->  
+
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#">ПРОДУКЦИЯ</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Питатели</a>
+                        <a class="dropdown-item" href="#">Проборазделочные машины</a>
+                        <a class="dropdown-item" href="#">Грохоты</a>
+                        <a class="dropdown-item" href="#">Центрифуги</a>
+                        <a class="dropdown-item" href="#">Элеваторы</a>
+                        <a class="dropdown-item" href="#">Лебедки</a>
+                      </div>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="#">НОВОСТИ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
                 </ul>                
@@ -39,7 +51,6 @@
       <div class="col-sm-12">
         <div>
           <img class="picture-header" src="images/Picture-carusel1.jpg">
-          <h2 class="description-picture">КАЧЕСТВО, ПРОВЕРЕННОЕ <br>ПРАКТИКОЙ!</h2>
         </div>  
       </div>
     </div>
@@ -60,15 +71,15 @@
       <div class="row">
         <div class="col-sm-4">
           <img class="useful-images" src="images/images4.jpg" alt="УСЛУГИ">
-          <h3 class="useful-links-on-images">УСЛУГИ</h3>
+          <h3 class="useful-links-on-images"><a class="Useful-link" href="#">УСЛУГИ</a></h3>
         </div>
         <div class="col-sm-4">
           <img class="useful-images" src="images/images5.jpg" alt="ПРОДУКЦИЯ">
-          <h3 class="useful-links-on-images">ПРОДУКЦИЯ</h3>
+          <h3 class="useful-links-on-images"><a class="Useful-link" href="#">ПРОДУКЦИЯ</a></h3>
         </div>
         <div class="col-sm-4">
           <img class="useful-images" src="images/images6.jpg" alt="КАТАЛОГИ">
-          <h3 class="useful-links-on-images">КАТАЛОГИ</h3>
+          <h3 class="useful-links-on-images"><a class="Useful-link" href="#">КАТАЛОГИ</a></h3>
         </div>
       </div>
     </div>
