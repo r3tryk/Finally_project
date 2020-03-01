@@ -1,29 +1,29 @@
 
-header {
-    background-color: #3b3d42;
-}
-
 .nav-logo {
     margin: 30px;
 }
 
 .nav-link {
-    color: #fff;
+    color: black;
 }
 .nav-link:hover {
     color: #289448;
 }
 
 .nav {
+    justify-content: end;
     margin-top: 50px;
 }
 
-.picture-header {
+.picture-header { 
+    padding: 25px; 
     width: 100%;
-    height: auto;
+    height: 80%;
+    justify-content: center;
 }
 
 .description {
+    height: 80%;
     text-align: center;
     padding: 25px;
     margin: 30px;
