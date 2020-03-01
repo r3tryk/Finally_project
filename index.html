@@ -16,74 +16,138 @@
       <!--       Header with nav-menu and picture        -->
 
     <header>
-        <nav class="container">
+        <nav class="container-fluid">
             <div class="row">
             <div class="col-sm-4">
                 <div class="nav-logo">
                     <img src="../images/logo.svg" alt="Логотип нашей компании">
                 </div>   
             </div>
-            <div class="col-sm-8">
+
+                <!--------- Change language page ------------>
+
+                <div class="col-sm-8">
+                  <div class="right-part-header">
+
+                    <div class="lang-page">
+                      <a class="link" href="#">Русский | </a>
+                      <a class="link" href="#">English</a>
+                    </div>                   
+
+              <!-----------  Site menu  ------------->
+                <div class="menu">
                 <ul class="nav">
-                    <li class="nav-item"><a class="nav-link" href="#">ГЛАВНАЯ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">О КОМПАНИИ</a></li>
-
-                      <!--          Drop-menu            -->  
-
-                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#">ПРОДУКЦИЯ</a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Питатели</a>
-                        <a class="dropdown-item" href="#">Проборазделочные машины</a>
-                        <a class="dropdown-item" href="#">Грохоты</a>
-                        <a class="dropdown-item" href="#">Центрифуги</a>
-                        <a class="dropdown-item" href="#">Элеваторы</a>
-                        <a class="dropdown-item" href="#">Лебедки</a>
-                      </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#">НОВОСТИ</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">КОНТАКТЫ</a></li>
-                </ul>                
+                    <li class="nav-item"><a class="link" href="#">ГЛАВНАЯ</a></li>
+                    <li class="nav-item"><a class="link" href="#">О КОМПАНИИ</a></li>
+                    <li class="nav-item"><a class="link" href="#">ПРОДУКЦИЯ</a></li>
+                    <li class="nav-item"><a class="link" href="#">КОНТАКТЫ</a></li>
+                </ul>
+              </div>
+              </div>                
             </div>
-            </div>
+          </div>
         </nav>
     </header>
-    <div class="row">
-      <div class="col-sm-4">
-        <div>
-          <img class="picture-header" src="images/Images7.jpg">
-        </div>  
-      </div>
-      <div class="col-sm-8">
-        <div class="description">
-          <h4 class="heading">ООО «Донбасская индустриальная компания» осуществляет производство горно-шахтного 
-            оборудования и его реализацию на территории Украины и стран СНГ.</h4>
-          <p>Продукция нашей компании заслужила высокую репутацию на рынке оборудования для шахт
-            и металлургического оборудования. Также завод горно-шахтного оборудования ООО «ДИК»
-            производит ремонт металлургического и шахтного оборудования.</p>  
-        </div>  
-      </div>
-    </div>
-          
-        </div>
-      </div>
-    </div>
 
-    <div class="useful-links">
+    <!-------------  Main content   --------------->
+    <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-4">
-          <img class="useful-images" src="images/images4.jpg" alt="УСЛУГИ">
-          <h3 class="useful-links-on-images"><a class="Useful-link" href="#">УСЛУГИ</a></h3>
+          <div class="col-sm-5">
+          <div>
+            <img class="picture-header" src="images/Images7.jpg">
+          </div>  
         </div>
-        <div class="col-sm-4">
-          <img class="useful-images" src="images/images5.jpg" alt="ПРОДУКЦИЯ">
-          <h3 class="useful-links-on-images"><a class="Useful-link" href="#">ПРОДУКЦИЯ</a></h3>
+        <div class="col-sm-7">
+          <div class="description">
+            <h6 class="heading">ООО «Донбасская индустриальная компания» осуществляет производство горно-шахтного 
+              оборудования и его реализацию на территории Украины и стран СНГ.</h6>
+            <p>Продукция нашей компании заслужила высокую репутацию на рынке оборудования для шахт
+              и металлургического оборудования. Также завод горно-шахтного оборудования ООО «ДИК»
+              производит ремонт металлургического и шахтного оборудования.</p>  
+          </div>            
         </div>
-        <div class="col-sm-4">
-          <img class="useful-images" src="images/images6.jpg" alt="КАТАЛОГИ">
-          <h3 class="useful-links-on-images"><a class="Useful-link" href="#">КАТАЛОГИ</a></h3>
+      </div>
+          
+      <!-------------------- Useful links -------------->
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">
+            <h5 class="useful-links-on-images"><a class="link" href="#">УСЛУГИ</a></h5>
+            <img class="useful-images" src="images/images4.jpg" alt="УСЛУГИ">
+       
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <h5 class="useful-links-on-images"><a class="link" href="#">ПРОДУКЦИЯ</a></h5>
+            <img class="useful-images" src="images/images5.jpg" alt="ПРОДУКЦИЯ">
+            
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <h5 class="useful-links-on-images"><a class="link" href="#">КАТАЛОГИ</a></h5>            
+            <img class="useful-images" src="images/images6.jpg" alt="КАТАЛОГИ">
+
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <!----------------------- Our awards carusel ---------------------->
+
+    <div class="container-fluid">
+      <div class="row"></div>
+      <div><h5><a class="link" href="#">Наши награды за время работы!</a></h5></div>
+      </div>
+
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+        <img class="awards" src="images/Diploma1.jpg" alt="#">
+      </div>
+      <div class="col-sm-3">
+        <img class="awards" src="images/Diploma2.jpg" alt="#">
+      </div>
+      <div class="col-sm-3">
+        <img class="awards" src="images/Diploma3.jpg" alt="#">
+      </div>
+      <div class="col-sm-3">
+        <img class="awards" src="images/Diploma4.jpg" alt="#">
+      </div>
+    </div>
+    </div>
+    </div>
+
+
+
+    <!------------- Footer ------------->
+    <footer>
+
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+        <div class="menu">
+          <ul class="nav">
+              <li class="nav-item"><a class="link" href="#">ГЛАВНАЯ</a></li>
+              <li class="nav-item"><a class="link" href="#">О КОМПАНИИ</a></li>
+              <li class="nav-item"><a class="link" href="#">ПРОДУКЦИЯ</a></li>
+              <li class="nav-item"><a class="link" href="#">КОНТАКТЫ</a></li>
+          </ul>
         </div>
       </div>
     </div>
 
+      <div class="row">
+       <div class="col-sm-12"> 
+        <div class="contacts">
+          <ul>
+            <li>Тел: +38 (636) 436-54-65</li>
+            <li>Факс +38 (06239)284441</li>
+            <li>E-mail: qwerty@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </footer>
 </body>
 </html>
