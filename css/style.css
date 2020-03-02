@@ -2,6 +2,11 @@
     width: 960px;
 }
 
+header {
+    margin-bottom: 30px;
+    background-color: rgb(139, 168, 168);
+}
+
 .right-part-header {
     height: 100%;
 }
@@ -14,7 +19,8 @@
 
 .register {
     display: block;
-    float: right;
+    text-align: end;
+    margin: 20px;
 }
 
 .menu {
@@ -83,13 +89,17 @@ h5 {
 }
 
 footer {
-    float: bottom;
     background-color: rgb(139, 168, 168);
+}
+
+footer>.menu {
+    justify-content: flex-end;
 }
 
 .contacts {
     margin: 20px;
     float: right;
+    color: rgb(13, 107, 10);
 }
 
 li {
