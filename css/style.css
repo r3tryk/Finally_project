@@ -88,12 +88,14 @@ h5 {
     text-align: center;
 }
 
-footer {
-    background-color: rgb(139, 168, 168);
+.form-registr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-footer>.menu {
-    justify-content: flex-end;
+footer {
+    background-color: rgb(139, 168, 168);
 }
 
 .contacts {
