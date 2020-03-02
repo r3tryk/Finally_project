@@ -3,12 +3,18 @@
 }
 
 .right-part-header {
-    flex-direction: row-reverse;
+    height: 100%;
 }
 
 .lang-page {
     display: block;
-    margin: 20px;
+    margin: 10px;
+    float: right;
+}
+
+.register {
+    display: block;
+    margin: 10px;
     float: right;
 }
 
@@ -78,6 +84,7 @@ h5 {
 }
 
 footer {
+    float: bottom;
     background-color: rgb(139, 168, 168);
 }
 
