@@ -1,14 +1,22 @@
-.container-fluid {
-    width: 960px;
+header {
+    background-color: rgb(128, 228, 228);
 }
 
-header {
-    margin-bottom: 30px;
-    background-color: rgb(139, 168, 168);
+.container-fluid {
+    width: 960px;
+    padding: 0;
+}
+
+.active {
+    color: #4a6;
 }
 
 .right-part-header {
     height: 100%;
+}
+
+main {
+    background-color: grey;
 }
 
 .lang-page {
@@ -17,15 +25,10 @@ header {
     float: right;
 }
 
-.register {
-    display: block;
-    text-align: end;
-    margin: 20px;
-}
-
 .menu {
     display: block;
     float: right;
+    margin-top: 20px;
 }
 
 .nav-logo {
@@ -50,17 +53,22 @@ header {
 .picture-header { 
     width: 100%;
     height: 80%;
+    margin-top: 20px;
+    padding-left: 25px;
 }
 
 .description {
-    width: 100%;
+    width: 95%;
     height: 80%;
-    padding: 15px;
-    margin-bottom: 35px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-right: 20px;
     text-align: center;
     border-left: 6px solid rgb(13, 107, 10);
     background-color: rgb(199,216,225);
 }
+
 
 .heading {
     color: green;
@@ -69,18 +77,21 @@ header {
 .useful-images {
     width: 90%;
     height: 200px;
+    padding-left: 25px;
 }
 
 .useful-links-on-images {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .awards {
-    margin: 30px;
+    margin: 20px;
     padding: 20px;
     width: 188px;
     height: 268px;
+    margin-top: 10px;
 }
 
 h5 {
@@ -88,15 +99,6 @@ h5 {
     text-align: center;
 }
 
-.form-registr {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-footer {
-    background-color: rgb(139, 168, 168);
-}
 
 .contacts {
     margin: 20px;
@@ -106,5 +108,146 @@ footer {
 
 li {
    list-style: none; 
+}
+
+
+.gmaps {
+    text-align: center;
+    margin: 30px;
+    
+}
+
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+
+label {
+    display: block;
+    margin: 0;
+}
+
+button {
+	outline: none !important;
+	border: none;
+    background: #9bb;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(13, 107, 10);
+}
+
+iframe {
+	border: 2px solid rgb(13, 107, 10);
+}
+
+.container-contact100 {
+    width: 100%;  
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+    
+  }
+  
+  .wrap-contact100 {
+    width: 100%;
+    background-image: url(../images/bg-01.jpg);
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;  
+    color: #ffffff;
+  }
+  
+  
+  /*==================================================================
+  [ Form ]*/
+  
+  .contact100-form {
+    width: 560px;
+    min-height: 100vh;
+    display: block;
+    padding: 110px 55px 55px 55px;
+  }
+  
+  .contact100-form-title {
+    width: 100%;
+    display: block;
+    font-family: Poppins-Regular;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.2;
+    text-align: center;
+    padding-bottom: 48px;
+  }
+  
+  
+  
+  /*------------------------------------------------------------------
+  [ Input ]*/
+  
+  .wrap-input100 {
+    width: 100%;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .label-input100 {
+    font-family: Montserrat-SemiBold;
+    font-size: 11px;
+    color: #fff;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding: 15px 0 2px 24px;
+  }
+  
+  .input100 {
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-family: Montserrat-Regular;
+    font-size: 18px;
+    color: #fff ;
+    line-height: 1.2;
+    padding: 0 26px;
+  }
+  
+  input.input100 {
+    height: 48px;
+  }
+  
+  textarea.input100 {
+    min-height: 130px;
+    padding-top: 14px;
+    padding-bottom: 15px;
+  }
+
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(128, 228, 228);
+}
+
+.logo-footer {
+    margin-left: 30px;
 }
 
