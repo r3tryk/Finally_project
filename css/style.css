@@ -1,10 +1,14 @@
-header {
-    background-color: rgb(128, 228, 228);
-}
 
 .container-fluid {
     max-width: 960px;
     padding: 0;
+    background-image: url(../images/background.jpg);
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 80%;
 }
 
 .active {
@@ -13,11 +17,6 @@ header {
 
 .right-part-header {
     height: 100%;
-}
-
-main {
-
-    background-color: grey;
 }
 
 .lang-page {
@@ -29,7 +28,7 @@ main {
 .menu {
     display: block;
     float: right;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .nav-logo {
@@ -51,6 +50,13 @@ main {
     margin: 10px;
 }
 
+.sub-menu {
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
 .picture-header { 
     width: 100%;
     height: 80%;
@@ -70,37 +76,72 @@ main {
     background-color: rgb(199,216,225);
 }
 
-
+p {
+    text-align: center;
+}
 .heading {
     color: green;
 }
 
+.advantages {
+    margin: 2%;
+}
+
+#gallery{
+    width: 100%;
+    margin: 5%;
+    height: 80%;    
+}
+
+#gallery .photos img{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+#gallery .photos img:first-child{
+    display: block;
+}
+
+.buttons {
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+
 .useful-images {
     width: 90%;
-    height: 200px;
+    height: auto;
     padding-left: 25px;
 }
 
 .useful-links-on-images {
     padding: 10px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 5%;
 }
 
 .awards {
-    margin: 20px;
+    margin: 5%;
     padding: 20px;
-    width: 188px;
-    height: 268px;
-    margin-top: 10px;
+    width: 100%;
+    height: auto;
 }
 
 h5 {
     margin: 20px;
     text-align: center;
+    color: rgb(13, 107, 10);
 }
 
+h4 {
+    text-align: center;
+    color: rgb(13, 107, 10);
+}
 
+.partners {
+    font-style: italic;
+}
 .contacts {
     margin: 20px;
     float: right;
@@ -111,11 +152,9 @@ li {
    list-style: none; 
 }
 
-
 .gmaps {
+    margin: 5%;
     text-align: center;
-    margin: 30px;
-    
 }
 
 input {
@@ -158,45 +197,46 @@ iframe {
 
 .container-contact100 {
     width: 100%;  
-    min-height: 100vh;
+    min-height: 20%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background: #f2f2f2;
     
-  }
+}
   
   .wrap-contact100 {
     width: 100%;
-    background-image: url(../images/bg-01.jpg);
+    margin-bottom: 0;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;  
     color: #ffffff;
-  }
+}
   
   
   /*==================================================================
   [ Form ]*/
-  
+
   .contact100-form {
-    width: 560px;
-    min-height: 100vh;
+    width: 50%;
     display: block;
-    padding: 110px 55px 55px 55px;
+    margin-left: 25%; 
+    padding: 20px 55px 55px 55px;
   }
   
   .contact100-form-title {
-    width: 100%;
+    width: 80%;
     display: block;
     font-family: Poppins-Regular;
-    font-size: 30px;
-    color: #fff;
+    font-size: 20px;
+    color: black;
     line-height: 1.2;
     text-align: center;
-    padding-bottom: 48px;
+    margin-left: 10%;
+    padding-bottom: 20px;
   }
   
   
@@ -207,7 +247,7 @@ iframe {
   .wrap-input100 {
     width: 100%;
     position: relative;
-    border: 1px solid #e6e6e6;
+    border: 2px solid grey;
     border-radius: 10px;
     margin-bottom: 20px;
   }
@@ -215,7 +255,7 @@ iframe {
   .label-input100 {
     font-family: Montserrat-SemiBold;
     font-size: 11px;
-    color: #fff;
+    color: black;
     line-height: 1.2;
     text-transform: uppercase;
     padding: 15px 0 2px 24px;
@@ -227,7 +267,7 @@ iframe {
     background: transparent;
     font-family: Montserrat-Regular;
     font-size: 18px;
-    color: #fff ;
+    color: black ;
     line-height: 1.2;
     padding: 0 26px;
   }
@@ -237,15 +277,18 @@ iframe {
   }
   
   textarea.input100 {
-    min-height: 130px;
+    min-height: 80px;
     padding-top: 14px;
     padding-bottom: 15px;
   }
 
+  .contact100-form-btn {
+      margin-left: 10%;
+      background-color: #acc;
+}
+
 footer {
-    padding-top: 30px;
     padding-bottom: 20px;
-    background-color: rgb(128, 228, 228);
 }
 
 .logo-footer {
