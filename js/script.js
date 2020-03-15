@@ -59,32 +59,58 @@ btn_prev.onclick = function(){
     images[i].style.display = 'block';
 }
 
+function onFormSubmited(e) {
+    const isValid = validate();
+
+    if (!isValid) {
+        return false;
+    }
+
+    const form = document.forms["form"];
+
+    const messageBox = document.createElement("div");
+
+    messageBox.innerText = "Спасибо за ваше сообщение , мы вам ответим в ближайшее время";
+    messageBox.className = "message-box";
+
+    form.parentElement.appendChild(messageBox);
+
+    form.remove();
+
+    e.preventDefault();
+
+    return true;
+}
 
 // Валидность формы
 
 //Считаем значения из полей name и email в переменные x и y
 function validate(){
-    let x = document.forms["form"]["name"].value;
-    let y = document.forms["form"]["email"].value;
+    let name = document.forms["form"]["name"].value;
+    let email = document.forms["form"]["email"].value;
 
 //Если поле name пустое выведем сообщение и предотвратим отправку формы
-    if (x.length==0){
+    if (name.length==0){
         document.getElementById("namef").innerHTML = "*данное поле обязательно для заполнения";
         return false;
      }
 
 //Если поле email пустое выведем сообщение и предотвратим отправку формы
-     if (y.length==0){
+     if (email.length==0){
         document.getElementById("emailf").innerHTML = "*данное поле обязательно для заполнения";
         return false;
      }
-   //Проверим содержит ли значение введенное в поле email символы @ и .
-   dog=y.indexOf("@");
-   dot=y.indexOf(".");
-   //Если поле не содержит эти символы знач email введен не верно
+//Проверим содержит ли значение введенное в поле email символы @ и .
+
+   dog=email.indexOf("@");
+   dot=email.indexOf(".");
+
+//Если поле не содержит эти символы знач email введен не верно
+
    if (dog<1 || dot <1){
       document.getElementById("emailf").innerHTML = "*email введен не верно";
       return false;
    }
-}     
 
+   return true;
+}     
