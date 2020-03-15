@@ -19,10 +19,12 @@ img {
     display: block;
     float: right;
     margin-top: 50px;
+    margin-right: 20%;
 }
 
 .nav-logo {
     margin: 30px;
+    margin-left: 20%;
 }
 
 .link {
@@ -60,7 +62,7 @@ img {
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 25px;
-    margin-right: 20px;
+    margin-right: 20%;
     text-align: center;
     border-left: 6px solid rgb(13, 107, 10);
     background-color: rgb(199,216,225);
@@ -296,38 +298,86 @@ footer {
 
 /* Адаптивность сайта */
 
-@media screen and (max-width : 1199px) {
-
+@media screen and (max-width : 1200px) {
     .picture-header {
         width: 590px;
         margin-right: 0;
+    }
+    h5 {
+        width: 300px;
+        margin: auto;
+    } 
+    img {
+        margin: auto;
+    }
+    #gallery {
+        width: 900px;
+        margin: auto;
+    }
+    .photos {
+        padding: 0;
+        margin: auto;
+    }
+
+    .prev {
+        width: 70px;
+        margin-left: 300px;
+    }
+    .next {
+        width: 70px;
+    }
+    .useful-images {
+        margin: auto;
+        padding: 0;
     }
 
 }
 
 @media screen and (max-width : 768px) {
-
-}
-@media screen and (max-width : 767px) {
+    .nav-logo {
+        margin-top: 60px;
+    }
+    .menu {
+        width: 550px;
+        font-size: medium;
+        margin-right: 0px;
+    }
     .picture-header {
         width: 100%;
         height: 300px;
     }
-
+    .#gallery {
+        width: 600px;
+        margin: auto;
+        padding: 0;
+    }
+    .photos {
+        width: 600px;
+        margin-left: 60px;
+    
+    }
+    h5 {
+        width: 300px;
+    }
     .contact100-form-btn {
-        margin-left: 0px;        
+        width: 270px;
+        margin: 0;        
     }
 
     .prev {
-        margin-left: 140px;
+        margin-left: 190px;
         width: 70px;
     }
     .next {
         width: 70px;
     }
-
+    .useful-links-on-images {
+        width: 200px;
+        margin: auto;
+    }
+    
     .contacts {
-        margin: 0;
+        
     }
     .contacts ul {
         width: 250px;
@@ -335,7 +385,7 @@ footer {
     }
 }
 
-@media screen and (max-width : 575px) {
+@media screen and (max-width : 576px) {
     .nav {
         padding: 20px;
     }
@@ -344,13 +394,23 @@ footer {
         margin-top: 90px;
     }
     .picture-header {
-        width: 130%;
-        padding: 0;
+        width: 500px;
+        padding-left: 30px;
         margin: auto;
     }
 
     .description {
         width: 100%;
+    }
+    #gallery {
+        width: 400px;
+        padding: 0;
+        margin: auto;
+    }
+    .photos {
+        width: 400px;
+        padding: 0;
+        margin: auto;
     }
 
     .prev {
@@ -377,7 +437,7 @@ footer {
     }
 
     h5 {
-        width: 200px;
+        width: 300px;
         margin: auto;
     }
 
